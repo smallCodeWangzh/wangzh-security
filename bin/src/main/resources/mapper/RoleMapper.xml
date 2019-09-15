@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.briup.security.mapper.RoleMapper">
+	<select id="selectAllByCustomerId" resultType="com.briup.security.bean.Role">
+		select * from roles where customer_id = #{id}
+	</select>
+</mapper>
